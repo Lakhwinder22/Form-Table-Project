@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "firstName": "Jenny",
+    "lastName": "Chan",
+    "phoneNumber": "333-962-7516",
+    "email": "jenny.chan@email.com"
+  },
+  {
+    "id": 2,
+    "firstName": "Raman",
+    "lastName": "Kholi",
+    "phoneNumber": "011-211-7516",
+    "email": "raman.kholi@email.com"
+  },
+  {
+    "id": 3,
+    "firstName": "Tony ",
+    "lastName": "Gupta",
+    "phoneNumber": "788-962-7516",
+    "email": "tony.gupta@email.com"
+  },
+  {
+    "id": 4,
+    "firstName": "Rahul ",
+    "lastName": "Kumar",
+    "phoneNumber": "011-962-111",
+    "email": "jeremy.clark@email.com"
+  },
+  {
+    "id": 5,
+    "firstName": "Preeti",
+    "lastName": "Kumari",
+    "phoneNumber": "3231-962-7516",
+    "email": "raymon.edwards@email.com"
+  }
+]
