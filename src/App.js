@@ -10,15 +10,24 @@ const App = () => {
   const [addFormData, setAddFormData] = useState({
     firstName: "",
     lastName: "",
+    UserName: "",
     phoneNumber: "",
     email: "",
+    skill: "",
+    experience: "",
+    description: "",
+
   });
 
   const [editFormData, setEditFormData] = useState({
     firstName: "",
     lastName: "",
+    UserName: "",
     phoneNumber: "",
     email: "",
+    skill: "",
+    experience: "",
+    description: ""
   });
 
   const [editContactId, setEditContactId] = useState(null);
@@ -54,8 +63,12 @@ const App = () => {
       id: nanoid(),
       firstName: addFormData.firstName,
       lastName: addFormData.lastName,
+      UserName: addFormData.UserName,
       phoneNumber: addFormData.phoneNumber,
       email: addFormData.email,
+      skill: addFormData.skill,
+      experience: addFormData.experience,
+      description: addFormData.description,
     };
 
     const newContacts = [...contacts, newContact];
@@ -69,8 +82,12 @@ const App = () => {
       id: editContactId,
       firstName: editFormData.firstName,
       lastName: editFormData.lastName,
+      UserName: editFormData.UserName,
       phoneNumber: editFormData.phoneNumber,
       email: editFormData.email,
+      skill: editFormData.skill,
+      experience: editFormData.experience,
+      description: editFormData.description,
     };
 
     const newContacts = [...contacts];
@@ -90,8 +107,12 @@ const App = () => {
     const formValues = {
       firstName: contact.firstName,
       lastName: contact.lastName,
+      UserName: contact.UserName,
       phoneNumber: contact.phoneNumber,
       email: contact.email,
+      skill: contact.skill,
+      experience: contact.experience,
+      description: contact.description,
     };
 
     setEditFormData(formValues);
@@ -120,7 +141,7 @@ const App = () => {
         <input
           type="text"
           name="firstName"
-          notrequired=" Not required"
+          notrequired="Not required"
           placeholder="Enter First Name..."
           onChange={handleAddFormChange}
         /><br></br><br></br>
@@ -128,7 +149,7 @@ const App = () => {
         <input
           type="text"
           name="lastName"
-          notrequired=" Not required"
+          notrequired="Not required"
           placeholder="Enter Last Name..."
           onChange={handleAddFormChange}
         /><br></br><br></br>
@@ -136,7 +157,7 @@ const App = () => {
          <input
           type="text"
           name="UserName"
-          required="  required"
+          required="required"
           placeholder="Enter User Name..."
           onChange={handleAddFormChange}
         /><br></br><br></br>
@@ -158,8 +179,9 @@ const App = () => {
         />
         <br></br><br></br>
         <label>Skill</label>
-         <input type="text" 
-          name="text"
+         <input 
+          type="text" 
+          name="skill"
           required="required"
           placeholder="Enter your Skills..."
           onChange={handleAddFormChange}
@@ -168,7 +190,7 @@ const App = () => {
          <label>Total Experience</label>
          <input
           type="number"
-          name="Total Experience"
+          name="experience"
           required="required"
           placeholder="Enter Total Experience..."
           onChange={handleAddFormChange}
@@ -176,7 +198,7 @@ const App = () => {
          <label>Description</label>
          <textarea
           type="text"
-          name="Description"
+          name="description"
           required="required"
           placeholder=" Write YourSelf..."
           onChange={handleAddFormChange}
@@ -192,8 +214,12 @@ const App = () => {
             <tr>
               <th>First Name</th>
               <th>Last Name</th>
+              <th>User Name</th>
               <th>Phone Number</th>
               <th>Email</th>
+              <th>Skill</th>
+              <th>Experience</th>
+              <th>Description</th>
               <th>Actions</th>
             </tr>
           </thead>

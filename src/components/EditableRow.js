@@ -22,8 +22,18 @@ const EditableRow = ({
           type="text"
           required="required"
           placeholder="Enter Last Name..."
-          name="lastNmae"
+          name="lastName"
           value={editFormData.lastName}
+          onChange={handleEditFormChange}
+        ></input>
+      </td>
+      <td>
+        <input
+          type="text"
+          required="required"
+          placeholder="Enter User Name..."
+          name="UserName"
+          value={editFormData.UserName}
           onChange={handleEditFormChange}
         ></input>
       </td>
@@ -44,6 +54,36 @@ const EditableRow = ({
           placeholder="Enter an email..."
           name="email"
           value={editFormData.email}
+          onChange={handleEditFormChange}
+        ></input>
+      </td>
+      <td>
+        <input
+          type="text"
+          required="required"
+          placeholder="Enter the Skill..."
+          name="skill"
+          value={editFormData.skill}
+          onChange={handleEditFormChange}
+        ></input>
+      </td>
+      <td>
+        <input
+          type="text"
+          required="required"
+          placeholder="Enter Total Experience..."
+          name="experience"
+          value={editFormData.experience}
+          onChange={handleEditFormChange}
+        ></input>
+      </td>
+      <td>
+        <input
+          type="text"
+          required="required"
+          placeholder="Write your Description..."
+          name="description"
+          value={editFormData.description}
           onChange={handleEditFormChange}
         ></input>
       </td>
